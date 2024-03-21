@@ -7,6 +7,7 @@ n 1~10**6
 
 请你求出答案。
 """
+
 """
 4047 False 8191128
 4048 False 2024
@@ -29,7 +30,7 @@ num = int(input())
 def isPrime(n):
     if n <= 1:
         return False
-    for i in range(2, int(n ** 0.5) + 1):
+    for i in range(2, int(n**0.5) + 1):
         if n % i == 0:
             return False
     return True
