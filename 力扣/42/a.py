@@ -11,7 +11,11 @@ class Solution:
             pre_max[i] = max(pre_max[i - 1], height[i])
             suf_max[n - i - 1] = max(suf_max[n - i], height[n - i - 1])
         res = 0
-        for a, b, c, in zip(height, pre_max, suf_max):
+        for (
+            a,
+            b,
+            c,
+        ) in zip(height, pre_max, suf_max):
             res += min(b, c) - a
         return res
 

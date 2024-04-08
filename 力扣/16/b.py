@@ -6,7 +6,7 @@ class Solution:
         # O(n^2),O(1)
         nums.sort()
         n = len(nums) - 1
-        min_diff = 10 ** 5
+        min_diff = 10**5
         res = 0
 
         for a, i in enumerate(nums[:-2]):
