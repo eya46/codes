@@ -9,13 +9,11 @@ class TreeNode:
 
 
 class Solution:
-
     def pathSum(self, root: Optional[TreeNode], targetSum: int) -> List[List[int]]:
         if root is None:
             return []
 
         if root.left == root.right:
-
             if root.val == targetSum:
                 return [[targetSum]]
             else:
