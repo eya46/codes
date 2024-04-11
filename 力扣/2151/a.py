@@ -9,7 +9,6 @@ class Solution:
         path = [2] * n
 
         def dfs(i):
-
             nonlocal path
             if i == n:
                 return res.append(path.count(1))

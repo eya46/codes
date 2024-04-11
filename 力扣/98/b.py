@@ -9,7 +9,7 @@ class TreeNode:
 
 
 class Solution:
-    pre = -(2 ** 32)
+    pre = -(2**32)
 
     def isValidBST(self, root: Optional[TreeNode]) -> bool:
         if root is None:

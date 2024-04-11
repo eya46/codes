@@ -7,7 +7,6 @@ class Solution:
         path = []
 
         def dfs(i):
-
             if len(path) == k:
                 if sum(path) == n:
                     res.append(path[:])

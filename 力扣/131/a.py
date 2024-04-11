@@ -15,7 +15,7 @@ class Solution:
             if i < n - 1:
                 dfs(i + 1, start)
 
-            t = s[start:i + 1]
+            t = s[start : i + 1]
 
             if t == t[::-1]:
                 path.append(t)

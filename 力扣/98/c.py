@@ -12,7 +12,7 @@ inf = float("inf")
 
 
 class Solution:
-    pre = -(2 ** 32)
+    pre = -(2**32)
 
     def isValidBST(self, root: Optional[TreeNode]) -> bool:
         def f(node: Optional[TreeNode]):

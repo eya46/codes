@@ -11,19 +11,20 @@ class Solution:
         path = []
 
         def dfs(i):
-
             # 选完了
             if len(path) == numSelect:
                 return res.append(
-                    len(list(  # 全为0的行的数量
-                        filter(
-                            lambda x: sum(x) == 0,  # 判断和为0
-                            [
-                                [col for idx, col in enumerate(row) if idx not in path]  # 筛去已经选择的列
-                                for row in matrix  # 遍历行
-                            ]
+                    len(
+                        list(  # 全为0的行的数量
+                            filter(
+                                lambda x: sum(x) == 0,  # 判断和为0
+                                [
+                                    [col for idx, col in enumerate(row) if idx not in path]  # 筛去已经选择的列
+                                    for row in matrix  # 遍历行
+                                ],
+                            )
                         )
-                    ))
+                    )
                 )
 
             # 超出矩阵没得选了

@@ -7,5 +7,5 @@ class Solution:
         else:
             return max(
                 self.longestCommonSubsequence(text1, text2, i + 1, j),
-                self.longestCommonSubsequence(text1, text2, i, j + 1)
+                self.longestCommonSubsequence(text1, text2, i, j + 1),
             )

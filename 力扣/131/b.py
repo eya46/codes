@@ -15,7 +15,7 @@ class Solution:
                 return
 
             for j in range(i, n):
-                data = s[i:j + 1]
+                data = s[i : j + 1]
                 if data == data[::-1]:
                     path.append(data)
                     dfs(j + 1)

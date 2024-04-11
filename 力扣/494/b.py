@@ -22,4 +22,6 @@ class Solution:
                 return dfs(i - 1, left)
             return dfs(i - 1, left) + dfs(i - 1, left - nums[i])
 
+        """dfs(i)=dfs()"""
+
         return dfs(n - 1, target)
